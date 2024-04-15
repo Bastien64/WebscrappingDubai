@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets Neufs</title>
+</head>
+<body>
+    <h1>Projets Neufs</h1>
+    <p>Cliquez sur le bouton ci-dessous pour télécharger le fichier CSV :</p>
+    <form action="/download_csv" method="post">
+        <button type="submit" name="download_csv">Télécharger CSV</button>
+        <input type="hidden" name="csv_data" value="{{ csv_data }}">
+    </form>
+</body>
+</html>
